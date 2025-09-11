@@ -51,11 +51,9 @@ try:
     print("Tärningen slog", dice)
 
     kast = int(input("Hur många tärningare"))
-    bajs = 0
 
-    while bajs < kast:
-            print(random.randint(1,6))
-            bajs += 1
+    for i in range(kast):
+        print("kast", i+1, "Blev", random.randint(1,6))
 
 except:
     print("Error")
